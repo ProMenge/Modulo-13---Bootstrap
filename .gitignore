@@ -1,0 +1,65 @@
+# Ignorar arquivos de build
+build/
+dist/
+.parcel-cache/
+.vite/
+
+# Ignorar módulos do Node
+node_modules/
+
+# Ignorar configurações locais do VS Code
+.vscode/*.local
+.vscode/settings.json # Geralmente é melhor ignorar, a menos que você queira compartilhar configurações muito específicas com a equipe.
+.vscode/tasks.json # Tarefas podem ser compartilhadas, mas se forem muito específicas do seu ambiente, ignore.
+.vscode/launch.json # Configurações de depuração costumam ser pessoais.
+.vscode/extensions.json # Lista de extensões, pode ser útil compartilhar.
+
+# Ignorar arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignorar arquivos de variáveis de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar arquivos de cache
+.DS_Store # macOS
+Thumbs.db # Windows
+npm-cache/
+.eslintcache
+.jest-cache/
+
+# Ignorar arquivos gerados pelo Jest
+coverage/
+
+# Ignorar arquivos temporários
+*.tmp
+*.bak
+*.swp
+
+# Ignorar arquivos de teste (se gerados automaticamente ou não versionados)
+# Pode ser útil se você tiver snapshots de teste que mudam frequentemente
+# __snapshots__/
+
+# Ignorar arquivos de editor (VS Code específico)
+.vscode/pylance.trace # Se você tiver Python no projeto
+.vscode/settings.json.bak
+.vscode/vscode.json.bak
+
+# Ignorar arquivos de IDEs/editores específicos (além do VS Code)
+# .idea/ # IntelliJ IDEA
+# *.iml # IntelliJ IDEA
+# *.iws # IntelliJ IDEA
+# .project # Eclipse
+# .classpath # Eclipse
+# .cproject # Eclipse
+
+# Ignorar arquivos de containers Docker (se aplicável)
+.dockerignore
+!docker-compose.yml # Exemplo: Se você quiser versionar o docker-compose.yml
+!Dockerfile # Exemplo: Se você quiser versionar o Dockerfile
