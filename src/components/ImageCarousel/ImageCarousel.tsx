@@ -6,8 +6,6 @@ function getRandomSeed() {
   return Math.floor(Math.random() * 1000)
 }
 
-const images = Array.from({ length: 3 }, () => getRandomSeed())
-
 export function ImageCarousel() {
   const [loadedCount, setLoadedCount] = useState(0)
   const [images, setImages] = useState<number[]>([]) // Estado para armazenar as seeds das imagens
